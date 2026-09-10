@@ -1,0 +1,204 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fb;
+    margin: 0;
+    color: #222;
+}
+
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #ffffff;
+}
+
+header h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #666;
+    font-size: 18px;
+}
+
+main {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.welcome {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+.welcome h2 {
+    margin-top: 0;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s;
+}
+
+.card h3 {
+    font-size: 21px;
+}
+
+.card p {
+    color: #666;
+    line-height: 1.5;
+}
+
+.card button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: 8px;
+    background-color: #9b6eae;
+    color: #023150;
+    font-weight: bold;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+.study-group {
+    background-color: #f5f7fb;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.study-group h4 {
+    margin: 0 0 10px 0;
+}
+
+.study-group p {
+    margin: 5px 0;
+}
+
+.resource-item {
+    background-color: #f5f7fb;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.resource-item h4 {
+    margin: 0 0 10px 0;
+}
+
+.resource-item p {
+    margin: 5px 0;
+}
+
+
+#searchInput {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #222;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.card input {
+    width: 90%;
+    padding: 10px;
+    margin: 6px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+@media (max-width: 700px) {
+
+    .dashboard {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+}
+#studySearchWindow,
+#studyCreateWindow,
+#eventSearchWindow,
+#eventCreateWindow {
+    display: none;
+}
+
+#studySearchWindow,
+#studyCreateWindow,
+#eventSearchWindow,
+#eventCreateWindow,
+#resourceSearchWindow,
+#resourceCreateWindow {
+    display: none;
+}
+.study-options,
+.event-options,
+.resource-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.study-options button,
+.event-options button,
+.resource-options button {
+    width: 100%;
+    padding: 12px;
+    font-size: 15px;
+}

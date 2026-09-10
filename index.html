@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CampusHub</title>
+
+    <link rel="stylesheet" href="style.css">
+</head> 
+
+<body>
+
+    <header>
+        <nav>
+        <h1>🎓 CampusHub</h1>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Study Groups</a>
+            <a href="#">Events</a>
+            <a href="#">Resources</a>
+        </div>
+    </nav>
+        <p>Your student life, all in one place.</p>
+    </header>
+
+    <main>
+
+        <section class="welcome">
+            <h2>Welcome to CampusHub 👋</h2>
+            <p>Find study groups, events and useful resources.</p>
+        </section>
+
+        <section class="dashboard">
+
+            <div class="card">
+                <h3>📚 Study Groups</h3>
+                <p>Find students studying the same subjects.</p>
+                <div class="study-options">
+
+    <button id="findStudyButton">🔎 Find a Study Group</button>
+
+    <button id="createStudyButton">➕ Create a Study Group</button>
+
+</div>
+
+<div id="studySearchWindow">
+
+    <h4>🔎 Find a Study Group</h4>
+
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="Search for a subject..."
+    >
+
+    <button id="studyButton">Search</button>
+
+    <div id="studyResult"></div>
+
+</div>
+
+<div id="studyCreateWindow">
+
+    <h4>➕ Create a Study Group</h4>
+
+    <form id="studyForm">
+
+        <input 
+            type="text" 
+            id="subjectInput" 
+            placeholder="Subject"
+            required
+        >
+
+        <input 
+            type="text" 
+            id="dayInput" 
+            placeholder="Day"
+            required
+        >
+
+        <input 
+            type="number" 
+            id="membersInput" 
+            placeholder="Number of students"
+            required
+        >
+
+        <button type="submit">Add Study Group</button>
+
+    </form>
+
+</div>
+            </div>
+
+            <div class="card">
+    <h3>📅 Campus Events</h3>
+    <p>Discover events, workshops and clubs.</p>
+
+    <div class="event-options">
+
+    <button id="findEventButton">🔎 Find an Event</button>
+
+    <button id="createEventButton">➕ Create an Event</button>
+
+</div>
+
+<div id="eventSearchWindow">
+
+    <h4>🔎 Find an Event</h4>
+
+    <input
+        type="text"
+        id="eventSearchInput"
+        placeholder="Search for an event..."
+    >
+
+    <button id="eventButton">Search</button>
+
+    <div id="eventResult"></div>
+
+</div>
+
+<div id="eventCreateWindow">
+
+    <h4>➕ Create an Event</h4>
+
+    <form id="eventForm">
+
+        <input
+            type="text"
+            id="eventNameInput"
+            placeholder="Event name"
+            required
+        >
+
+        <input
+            type="text"
+            id="eventDayInput"
+            placeholder="Day"
+            required
+        >
+
+        <input
+            type="text"
+            id="eventLocationInput"
+            placeholder="Location"
+            required
+        >
+
+        <button type="submit">Add Event</button>
+
+    </form>
+
+</div>
+            </div>
+            <div class="card">
+    <h3>📖 Resources</h3>
+    <p>Share and discover useful study materials.</p>
+  
+<div class="resource-options">
+
+    <button id="findResourceButton">🔎 Find a Resource</button>
+
+    <button id="createResourceButton">➕ Add a Resource</button>
+
+</div>
+
+<div id="resourceSearchWindow">
+
+    <h4>🔎 Find a Resource</h4>
+
+    <input
+        type="text"
+        id="resourceSearchInput"
+        placeholder="Search for a resource..."
+    >
+
+    <button id="resourceButton">Search</button>
+
+    <div id="resourceResult"></div>
+
+</div>
+
+<div id="resourceCreateWindow">
+
+    <h4>➕ Add a Resource</h4>
+
+    <form id="resourceForm">
+
+        <input
+            type="text"
+            id="resourceNameInput"
+            placeholder="Resource name"
+            required
+        >
+
+        <input
+            type="text"
+            id="resourceTypeInput"
+            placeholder="Type (PDF, Guide, Exercises...)"
+            required
+        >
+
+        <input
+            type="text"
+            id="resourceSubjectInput"
+            placeholder="Subject"
+            required
+        >
+
+        <button type="submit">Add Resource</button>
+
+    </form>
+
+</div>    
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

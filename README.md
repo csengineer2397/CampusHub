@@ -14,3 +14,8 @@ CampusHub is a simple web application where students can explore different secti
 2. Events: search for events, create new ones, and join events.
 3. Resources: search for learning materials or add new ones.
 4. LocalStorage: keeps created groups, events, participants, and resources all saved in the browser.
+## Project Structure
+CampusHub/
+-index.html: for structure and content of the website.
+-style.css: for styling and responsive layout.
+-script.js: for interactive features and application logic.
